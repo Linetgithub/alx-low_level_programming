@@ -4,7 +4,7 @@
  * main - prints all combination of single digits
  * Return: Always
  */
-int main(void)
+int main(void) 0
 {
 	int n;
 
