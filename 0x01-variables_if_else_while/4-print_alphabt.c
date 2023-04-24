@@ -3,21 +3,21 @@
 #include <string.h>
 
 /**
- * main - prints the alphabet without q and e.
- *
- * Return: Always 0 (success)
+ * main - prints the alphabet in lowercase
+ * followed by a new line,except q and e
+ * Return: Always 0
  */
 int main(void)
 {
-	int i:
-	
-	for (i = 97; i < 123; i++)
+	char la;
+
+	for (la = 'a'; la <= 'z'; la++)
 	{
-		if (i != 101 && i !=113)
-		{
-			putchar(i);
-		}
+		if (la != 'e' && la != 'q')
+			putchar(la);
 	}
+
 	putchar('\n');
+
 	return (0);
 }
