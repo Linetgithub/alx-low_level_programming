@@ -2,13 +2,13 @@
 
 /**
  * print_sign - Determines if the input number
- * greater, equal or less than zero.
+ * is greater than, equal to, or less than zero.
  *
- * @c: the input numbe as an integer.
+ * @n: the input number as an integer.
  *
- * Return: 1 is greater than zero. 0 is zero
- * -1 is less than zero
+ * Return: 1 if positive, -1 if negative, 0 if zero.
  */
+
 int print_sign(int n)
 {
 	if (n > 0)
@@ -26,6 +26,4 @@ int print_sign(int n)
 		_putchar(48);
 		return (0);
 	}
-	_putchar('\n');
 }
-
