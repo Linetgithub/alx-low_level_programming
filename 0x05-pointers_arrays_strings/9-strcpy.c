@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * char *_strcpy - a function that copies the string pointed to by src
- * @dest: copy to
- * @src: copy from
+ * _strcpy - copies  string pointed to src
+ * @dest: destination
+ * @src: source
  * Return: string
  */
 char *_strcpy(char *dest, char *src)
@@ -13,6 +13,7 @@ char *_strcpy(char *dest, char *src)
 	while (*(src + len) != '\0')
 	{
 		*(dest + len) = *(src + len);
+		len++;
 	}
 
 	*(dest + len) = '\0';
