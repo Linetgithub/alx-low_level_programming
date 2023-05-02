@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlb.h>
 #include <time.h>
 
 /**
@@ -14,7 +13,7 @@ int main(void)
 
 	sum = 0;
 
-	srand(timt(NULL));
+	srand(time(NULL));
 
 	for (i = 0; i < 100; i++)
 	{
