@@ -5,6 +5,7 @@
  * @dest: copy to
  * @src: copy from
  * @n: number of char to be copied
+ * Return: A point to the resulting string desk
  */
 char *_strncpy(char *dest, char *src, int n)
 {
