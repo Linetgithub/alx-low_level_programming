@@ -4,13 +4,12 @@
  * _strspn - Entry point
  * @s: input
  * @accept: input
- * @i: input
  * Return: Always 0 (success)
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int n = 0
-		int i;
+	unsigned int n = 0;
+	int i;
 
 	while (*s)
 	{
