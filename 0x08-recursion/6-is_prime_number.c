@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 int actual_prime(int n, int i);
 /**
@@ -16,7 +15,7 @@ int is_prime_number(int n)
 }
 
 /**
- * check_prime - check if number is prime
+ * actual_prime - calculates if number is prime
  * @n: the number to be checked
  * @i: the iteration times
  *
