@@ -17,3 +17,4 @@
 	{
 		action(array[i]);
 	}
+}
