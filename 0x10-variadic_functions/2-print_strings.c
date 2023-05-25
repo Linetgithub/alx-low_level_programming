@@ -3,12 +3,12 @@
 #include <stdarg.h>
 
 /**
- * print_string - prints string, followed by a new line
+ * print_strings - prints strings, followed by a new line
  * @separator: the string to be printed betwen strings
- * @n; number of strings passed to the function
+ * @n: is the number of strings passed to the function
  * @...: variable number of strings to be printed
- * Description: if separator is NULL dont print
- * if one of the strings is NULL print nil instead
+ * Description: If separator is NULL, don’t print it
+ * If one of the string is NULL, print (nil) instead
  */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
