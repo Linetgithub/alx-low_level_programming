@@ -11,7 +11,7 @@ list_t *s;
 
 while (head)
 {
-s = head->n;
+s = head->next;
 free(head->str);
 free(head);
 head = s;
