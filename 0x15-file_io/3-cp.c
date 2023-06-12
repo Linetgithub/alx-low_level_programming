@@ -27,6 +27,23 @@ void error_file(int file_from, int file_to, char *argv[])
 }
 
 /**
+ * close_file - closes file
+ * @fd: file descriptor
+ */
+void close_file(int fd)
+{
+	int c;
+
+	c = close(fd);
+
+	if (c == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: can't close fd %d\n", fd);
+		exit(100);
+	}
+}
+
+/**
  * main - checks code
  * @argc: arguments no
  * @argv: arguments vector
