@@ -12,10 +12,6 @@ void print_class(unsigned char *e_ident);
 void print_data(unsigned char *e_ident);
 void print_version(unsigned char *e_ident);
 void print_abi(unsigned char *e_ident);
-void print_osabi(unsigned char *e_ident);
-void print_type(unsigned int e_type, unsigned char *e_ident);
-void print_entry(unsigned long int e_entry, unsigned char *e_ident);
-void close_elf(int elf);
 
 /**
 * check_elf - Checks if a file is an ELF file.
@@ -41,8 +37,8 @@ exit(98);
 }
 
 /**
-* print_magic - Prints the magic numbers 
-* @e_ident: A pointer 
+* print_magic - Prints the magic numbers
+* @e_ident: A pointer
 * Description: Magic numbers are separated by spaces.
 */
 
@@ -87,7 +83,7 @@ printf("<unknown: %x>\n", e_ident[EI_CLASS]);
 
 /**
 * print_data - Prints the data of an ELF header.
-* @e_ident: A pointer to an array 
+* @e_ident: A pointer to an array
 */
 
 void print_data(unsigned char *e_ident)
@@ -111,7 +107,7 @@ printf("<unknown: %x>\n", e_ident[EI_CLASS]);
 
 /**
  * print_version - Prints the version of an ELF header.
- * @e_ident: A pointer to an array 
+ * @e_ident: A pointer to an array
  */
 
 void print_version(unsigned char *e_ident)
